@@ -1,11 +1,11 @@
 # User Notes API
 
-Used Framework: SpringBoot
-Database: MongoDB
-Reason for Framework: SpringBoot contains all required libraries for REST, Security and DB including one that can control rate limiting ([Resilience4J RateLimiter](https://resilience4j.readme.io/docs/ratelimiter)). SpringBoot MongoDB JPA library supports text indexing via model annotation and has a good wrapper around all MongoDB search functionality.
-Reason for Database: performance and build in text indexed search.
-Default request throttling: 1 request per 2 seconds for /api/notes and /api/search API. 1 request per 1 second for /login
-Request throttling parameters can be changed via command line start parameters
+Used Framework: SpringBoot  
+Database: MongoDB  
+Reason for Framework: SpringBoot contains all required libraries for REST, Security and DB including one that can control rate limiting ([Resilience4J RateLimiter](https://resilience4j.readme.io/docs/ratelimiter)). SpringBoot MongoDB JPA library supports text indexing via model annotation and has a good wrapper around all MongoDB search functionality.  
+Reason for Database: performance and build in text indexed search.  
+Default request throttling: 1 request per 2 seconds for /api/notes and /api/search API. 1 request per 1 second for /login  
+Request throttling parameters can be changed via command line start parameters  
 
 ## Test
 mvn clean test
