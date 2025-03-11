@@ -220,7 +220,6 @@ class UserNotesAppTests {
         "Response status doesn't match for " + msg + " note");
 
     UserNoteDTO result = resp.getBody();
-    System.out.println(result);
     assertNotNull(result, "Expected non null response body for " + msg + " note");
     assertEquals(id, result.id(), "Note id doesn't match for " + msg + " note");
     assertEquals(text, result.note(), "Note text doesn't match  for " + msg + " note");
